@@ -7,7 +7,7 @@ class ChatLlama():
     """
     Loads LLM & Chain only once, loads (or creates if doesn't exist already) vectorized PDF database only once before running chat agent.
     The chat feature returns a response while updating that chat session's chat history.
-    The chat history viewing feature returns full chat history Chroma DB containing responses as documents, respective queries and latencies as metadatas.
+    The chat history viewing feature returns full chat history Chroma DB containing responses, queries, and latencies as documents.
     """
     def __init__(self):
         self.chain = LlamaLoader().chain
