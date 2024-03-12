@@ -9,7 +9,7 @@ class LlamaAgent():
     def run_agent(self, chain, query:str, db):
         latency_start = time.time()
         logger.log("LlamaAgent", f"querying vector database...")
-        docs = db.query(query_texts="Give me some facts about Llama2", n_results=3)
+        docs = db.query(query_texts=query, n_results=3)
         docs = docs["documents"][0]
         logger.log("LlamaAgent", f"generating response...")
         response = chain.invoke({"context":docs, "question":query})
