@@ -29,5 +29,7 @@
 ![chunk_size=150, chunk_overlap=10](/example_chats/150_10.png)
 ![chunk_size=500, chunk_overlap=50](/example_chats/500_50.png)
 ![chunk_size=1000, chunk_overlap=200](/example_chats/1000_200.png)
-# rag_chatbot_llama_cpu
-# rag_chatbot_llama_cpu
+
+### To-do's
+- `chunk_size` and `chunk_overlap` as args
+- add more `Chain`'s to improve naturalness and flexibility of conversation flow
